@@ -1,7 +1,8 @@
 #include <iostream>
+#include "SDLOpenGL.h"
 
 int main()
 {
-  std::cout << "Hello World" << std::endl;
+  SDLOpenGL window("My window", 500, 500, 500, 500);
   return EXIT_SUCCESS;
 }
