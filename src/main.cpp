@@ -7,7 +7,9 @@ void renderGL();
 
 int main()
 {
-  SDLOpenGL window("My window", 0, 0, 1024, 720);
+  int win_width = 1024;
+  int win_height = 720;
+  SDLOpenGL window("My window", 0, 0, win_width, win_height);
   window.makeCurrent();
   initializeGL();
   while(true){
