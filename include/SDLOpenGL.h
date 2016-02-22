@@ -12,6 +12,8 @@ public:
             int _y,
             int _width,
             int _height);
+  void makeCurrent() const { SDL_GL_MakeCurrent(m_window, m_gl_context); }
+  void swapWindow() const { SDL_GL_SwapWindow(m_window); }
 private:
   std::string m_name;
   int m_x;
